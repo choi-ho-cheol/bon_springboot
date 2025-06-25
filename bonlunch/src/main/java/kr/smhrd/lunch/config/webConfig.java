@@ -16,7 +16,7 @@ public class webConfig {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/lunch/api/**").allowedOrigins("http://localhost:5173")
+				registry.addMapping("/lunch/api/**").allowedOrigins("http://3.35.176.191:5173")
 						.allowedMethods("GET", "POST", "PUT", "DELETE").allowCredentials(true);
 			}
 		};
